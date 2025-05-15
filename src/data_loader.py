@@ -11,19 +11,21 @@ def load_data():
   return drivers, trips, sessions, riders, promotions
 
 if __name__ == "__main__":
-    trip, session, drivers, promotion, riders = load_data()
-
-    print("\nTrips Preview:")
-    print(trip.head())
-
-    print("\nSessions Preview:")
-    print(session.head())
-
+    drivers, trips, sessions, riders, promotions = load_data()
+    
     print("\nDrivers Preview:")
     print(drivers.head())
 
-    print("\nPromotions Preview:")
-    print(promotion.head())
+    print("\nTrips Preview:")
+    print(trips.head())
+   
+    print("\nSessions Preview:")
+    print(sessions.head())
 
     print("\nRiders Preview:")
     print(riders.head())
+
+    print("\nPromotions Preview:")
+    print(promotions.head())
+
+    print("\nData Loading Completed")
